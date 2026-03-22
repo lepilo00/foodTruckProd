@@ -66,7 +66,7 @@ export default function Hero() {
 
           <div className="hero__stats">
             <div className="hero__stat">
-              <span className="hero__stat-number">500+</span>
+              <span className="hero__stat-number">100+</span>
               <span className="hero__stat-label">Izvedenih dogodkov</span>
             </div>
             <div className="hero__stat-divider" aria-hidden="true"></div>
@@ -76,7 +76,7 @@ export default function Hero() {
             </div>
             <div className="hero__stat-divider" aria-hidden="true"></div>
             <div className="hero__stat">
-              <span className="hero__stat-number">10+</span>
+              <span className="hero__stat-number">7+</span>
               <span className="hero__stat-label">Let izkušenj</span>
             </div>
           </div>
