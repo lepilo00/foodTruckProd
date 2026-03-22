@@ -1,0 +1,112 @@
+.faq {
+  background-color: var(--color-white);
+}
+
+.faq__label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-4);
+}
+
+.faq__list {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-12);
+}
+
+.faq__item {
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--spacing-4);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.faq__item:hover {
+  border-color: var(--color-gray-300);
+}
+
+.faq__item--open {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-4);
+  padding: var(--spacing-5) var(--spacing-6);
+  text-align: left;
+  font-weight: 600;
+  font-size: var(--text-lg);
+  color: var(--color-gray-900);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.faq__question:hover {
+  color: var(--color-primary);
+}
+
+.faq__icon {
+  flex-shrink: 0;
+  color: var(--color-gray-500);
+  transition: transform var(--transition-base);
+}
+
+.faq__item--open .faq__icon {
+  transform: rotate(180deg);
+  color: var(--color-primary);
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-base), padding var(--transition-base);
+}
+
+.faq__item--open .faq__answer {
+  max-height: 500px;
+}
+
+.faq__answer p {
+  padding: 0 var(--spacing-6) var(--spacing-6);
+  color: var(--color-gray-600);
+  line-height: 1.8;
+}
+
+.faq__cta {
+  text-align: center;
+  padding: var(--spacing-8);
+  background-color: var(--color-gray-50);
+  border-radius: var(--radius-2xl);
+}
+
+.faq__cta p {
+  margin-bottom: var(--spacing-4);
+  font-size: var(--text-lg);
+  color: var(--color-gray-700);
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+  .faq__question {
+    padding: var(--spacing-4);
+    font-size: var(--text-base);
+  }
+
+  .faq__answer p {
+    padding: 0 var(--spacing-4) var(--spacing-4);
+  }
+
+  .faq__cta {
+    padding: var(--spacing-6);
+  }
+}

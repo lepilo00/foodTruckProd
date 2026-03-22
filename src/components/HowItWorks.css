@@ -1,0 +1,127 @@
+.how-it-works {
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+}
+
+.how-it-works .section-header h2 {
+  color: var(--color-white);
+}
+
+.how-it-works .section-header p {
+  color: var(--color-gray-400);
+}
+
+.how-it-works__label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-4);
+}
+
+.how-it-works__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-12);
+}
+
+.how-it-works__step {
+  position: relative;
+  text-align: center;
+  padding: var(--spacing-6);
+}
+
+.how-it-works__icon-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: var(--spacing-6);
+}
+
+.how-it-works__icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+  border-radius: var(--radius-2xl);
+  margin: 0 auto;
+  transition: transform var(--transition-base);
+}
+
+.how-it-works__step:hover .how-it-works__icon {
+  transform: scale(1.1);
+}
+
+.how-it-works__number {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+}
+
+.how-it-works__title {
+  font-size: var(--text-xl);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-3);
+}
+
+.how-it-works__description {
+  font-size: var(--text-base);
+  color: var(--color-gray-400);
+  line-height: 1.7;
+}
+
+.how-it-works__connector {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -30px;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), transparent);
+}
+
+@media (min-width: 1025px) {
+  .how-it-works__connector {
+    display: block;
+  }
+}
+
+.how-it-works__cta {
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .how-it-works__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+  }
+}
+
+@media (max-width: 640px) {
+  .how-it-works__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .how-it-works__step {
+    padding: var(--spacing-4);
+  }
+}
