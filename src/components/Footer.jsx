@@ -127,7 +127,7 @@ export default function Footer() {
               <li>
                 <Mail size={16} />
                 {/* TODO: Vnesite pravi email */}
-                <a href="mailto:info@foodtruck-najem.si">info@foodtruck-najem.si</a>
+                <a href="mailto:info@foodtrucknajem.com">info@foodtrucknajem.com</a>
               </li>
             </ul>
           </div>
