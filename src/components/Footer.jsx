@@ -122,7 +122,7 @@ export default function Footer() {
               <li>
                 <Phone size={16} />
                 {/* TODO: Vnesite pravo telefonsko številko */}
-                <a href="tel:+38640123456">+386 40 123 456</a>
+                <a href="tel:+38640811360">+386 40 811 360</a>
               </li>
               <li>
                 <Mail size={16} />

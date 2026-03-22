@@ -134,7 +134,7 @@ export default function Contact() {
                   <strong>Telefon</strong>
                   {/* TODO: Vnesite pravo telefonsko številko */}
                   <p>
-                    <a href="tel:+38640123456">+386 40 123 456</a>
+                    <a href="tel:+38640811360">+386 40 811 360</a>
                   </p>
                 </div>
               </li>
@@ -224,7 +224,7 @@ export default function Contact() {
                       className={`form-input ${errors.phone ? 'form-input--error' : ''}`}
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+386 40 123 456"
+                      placeholder="+386 40 811 360"
                       aria-describedby={errors.phone ? 'phone-error' : undefined}
                     />
                     {errors.phone && (
