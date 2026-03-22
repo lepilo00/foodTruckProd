@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.foodtruck-najem.si/sitemap.xml
+Sitemap: https://www.foodtrucknajem.com/sitemap.xml
