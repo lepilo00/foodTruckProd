@@ -25,10 +25,11 @@
     <meta name="twitter:description" content="Profesionalen najem food trucka v Ljubljani in po vsej Sloveniji za festivale, poroke, poslovne dogodke in zasebne zabave." />
     <meta name="twitter:image" content="/images/og-image.jpg" />
 
-    <!-- Fonts -->
+    <!-- Fonts (async - non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"></noscript>
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#D97706" />
