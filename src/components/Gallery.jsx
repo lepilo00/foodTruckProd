@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
-import foodTruckImg from '../assets/unnamed.jpg';
 import './Gallery.css';
 
 const galleryImages = [
   {
     id: 1,
-    src: foodTruckImg,
+    src: '/images/og-image.jpg',
     alt: 'Food truck'
   }
 ];

@@ -1,4 +1,4 @@
-import { Truck, Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Truck, Facebook, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 import './Footer.css';
 
 const footerLinks = [
@@ -114,11 +114,6 @@ export default function Footer() {
           <div className="footer__column">
             <h4 className="footer__column-title">Kontakt</h4>
             <ul className="footer__contact">
-              <li>
-                <MapPin size={16} />
-                {/* TODO: Vnesite pravi naslov */}
-                <span>Ulica 123, 1000 Ljubljana</span>
-              </li>
               <li>
                 <Phone size={16} />
                 {/* TODO: Vnesite pravo telefonsko številko */}
